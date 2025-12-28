@@ -473,8 +473,6 @@ footer{
 
   .homemsg {
     width: 100%;
-    /* text-align: center;
-    align-items: center; */
   }
 
   .homeimg {
@@ -541,7 +539,15 @@ footer{
 
 /* Smaller phones */
 @media (max-width: 500px) {
-
+.left{
+  display: none;
+}
+.right a{
+  font-size: smaller;
+}
+.navbar li{
+  padding: 2px 5px;
+}
   .skillcon {
     grid-template-columns: repeat(2, 1fr);
   }
