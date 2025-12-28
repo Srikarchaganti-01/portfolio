@@ -121,7 +121,7 @@ body{
   font-size: x-large;
 }
 .tags .btn{
-  background-color: white;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   padding-top: 5px;
@@ -580,3 +580,4 @@ footer{
   width: 87%;
 }
 }
+
