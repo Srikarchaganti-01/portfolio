@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat",'Courier New',"Playfair Display", sans-serif;
+}
+body{
+  background: radial-gradient(circle at top, #f7f7f7, #ffffff 100%);
+}
+
+/* ---------------Navbar---------------- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.right ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right ul li {
+    list-style: none;
+}
+.right a{
+  text-decoration: none;
+  color: black;
+}
+.left{
+    font-family: "Playfair Display", sans-serif;
+    cursor: default;
+    font-weight: 400;
+    font-size: large;
+}
+.navbar ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2%;
+}
+.navbar li {
+  display: inline;
+  cursor: pointer;
+  padding: 5px 15px;
+  position: relative;
+}
+.navbar li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar li:hover::after {
+  transform: scaleX(1);
+}
+/* -----------------Hero Section----------------- */
+.homecon{
+  height: 80vh;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+}
+.homemsg{
+  width: 60%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.homeimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: url(images/homeimg2.jpeg);
+  background-size: cover;
+}
+.homemsg h3{
+  font-weight: 450;
+  padding: 5px;
+}
+.homemsg h1{
+  font-weight: 300;
+  cursor: default;
+  padding: 3px;
+}
+.homemsg h4{ 
+  font-weight: 300;
+  cursor: default;
+  padding: 5px;
+}
+.tags i{
+  font-size: x-large;
+}
+.tags .btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 5px;
+  font-size: xx-large;
+}
+
+/* --------------Projects-------------- */
+.profol{
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+}
+.protit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.procon{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 2.5% 15%;
+}
+.card{
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img{
+  width: 100%;
+  height: 45%;
+  background-size: cover;
+  border-radius: 7px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.card h3{
+  margin-top: 5px;
+  font-weight: 400;
+}
+.card h5{
+  font-weight: 350;
+  color: rgb(40, 40, 39);
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+}
+.links a{
+  text-decoration: none;
+  color: rgb(59, 57, 57);
+}
+.tech{
+  color: rgb(85, 83, 83);
+}
+
+/* ---------------experience--------------- */
+.expfol{
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+}
+.exptit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expcon{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.ecard{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background: #fff;
+  transition: 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  background-color: white;
+}
+.ecard::before{
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 6px;
+  background: conic-gradient(from 0deg, white, black, white);
+  animation: rorbor 6s linear infinite;
+  z-index: -1;
+}
+.ecard::after{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  z-index: -1;
+}
+@keyframes rorbor {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ecardcon{
+  margin-left: 25px;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.ecardimg img{
+  width: 90px;
+  height: 90px;
+  border-radius: 25%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.ecard h2{
+  font-weight: 400;
+}
+.ecard h4{
+  font-weight: 300;
+}
+.ecard span{
+  font-weight: 250;
+  font-size: small;
+}
+/* --------------skills------------- */
+
+.skltit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scard img{
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  
+}
+.scard{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.scard:hover{
+  border-radius: 7px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.scard:hover img{
+  filter: grayscale(0%);
+}
+.skillcon{
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0px 20px;
+}
+/* ------------------contact form -------------- */
+
+.confol{
+  border-radius: 10px;
+  margin: 5px 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contit{
+  font-size: xx-large;
+}
+ .titcon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+.contcon {
+  display: flex;
+  gap: 40px;
+}
+.contform {
+  width: 320px;
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contform input,
+.contform textarea {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  padding: 14px;
+  border-radius: 10px;
+  color: rgb(85, 85, 85);
+}
+
+.contform textarea {
+  height: 90px;
+  resize: none;
+}
+
+.contcon button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  background: rgb(44, 43, 43);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.contcon button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+ .conbot{
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: small;
+  width: 350px;
+ }
+.contech{
+  color: rgb(85, 83, 83);
+  padding: 5px ;
+  padding-right: 20px;
+}
+.contech i{
+  font-size: x-large;
+}
+.conelem{
+  margin-bottom: 15px;
+}
+/* -------------footer----------- */
+footer{
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: large;
+  padding: 20px;
+}
+/* --------------status card---------------- */
+#status-card{
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+
+  width: 180px;
+  height: 40px;
+
+  background: white;
+  color: black;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  transition: all 0.35s ease;
+  pointer-events: none;
+}
+
+#status-card.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+#status-card.success{ border-left: 4px solid #7e7e7e; }
+#status-card.error{ border-left: 4px solid #1a1a1a; }
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .right ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero Section */
+  .homecon {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .homemsg {
+    width: 100%;
+  }
+
+  .homeimg {
+    width: 90%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  /* Projects */
+  .procon {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Experience */
+  .expcon {
+    grid-template-columns: 1fr;
+  }
+
+  .ecard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ecardcon {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  /* Skills */
+  .skillcon {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+  }
+
+  /* Contact Section */
+  .confol {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .contcon {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contform {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .conbot {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 500px) {
+
+.left{
+  display: none;
+}
+.right a{
+  font-size: smaller;
+}
+.navbar li{
+  padding: 2px 5px;
+}
+  .skillcon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homemsg h1 {
+    font-size: 20px;
+  }
+
+  .homemsg h4 {
+    font-size: 14px;
+  }
+
+.lef h1 { 
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.rig h1 { 
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.sl{
+  display: none;
+}
+.titcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conbot{
+  width: 87%;
+}
+footer p{
+  font-size: smaller;
+}
+}
