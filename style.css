@@ -162,6 +162,10 @@ body{
   grid-template-columns: 1fr 1fr ;
   gap: 2.5% 15%;
 }
+.promsg{
+  margin-top:50px;
+  font-weight:200;
+}
 .card{
   border-radius: 10px;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
@@ -501,7 +505,10 @@ footer{
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
+  .promsg{
+    margin-top:20px;
+    font-size:xx-small;
+  }
   /* Experience */
   .expcon {
     grid-template-columns: 1fr;
@@ -605,6 +612,7 @@ footer p{
   font-size: smaller;
 }
 }
+
 
 
 
