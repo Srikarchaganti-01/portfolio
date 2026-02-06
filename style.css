@@ -498,7 +498,13 @@ footer{
     height: 250px;
     margin-top: 20px;
   }
-
+  .tags{
+    display:none;
+  }
+  .butt{
+    padding:10px;
+    
+  }
   /* Projects */
   .procon {
     width: 100%;
@@ -612,9 +618,3 @@ footer p{
   font-size: smaller;
 }
 }
-
-
-
-
-
-
