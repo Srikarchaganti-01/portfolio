@@ -573,7 +573,10 @@ footer{
   .homemsg h4 {
     font-size: 14px;
   }
-
+.homeimg {
+    width: 90%;
+    height: 250px;
+  }
 .lef h1 { 
   font-size: 26px;
   margin-bottom: 15px;
@@ -597,4 +600,5 @@ footer p{
   font-size: smaller;
 }
 }
+
 
