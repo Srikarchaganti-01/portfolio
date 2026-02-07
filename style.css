@@ -157,10 +157,10 @@ body{
   align-items: center;
 }
 .procon{
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  gap: 2.5% 15%;
+  gap: 4% 20%;
 }
 .promsg{
   margin-top:50px;
@@ -618,4 +618,5 @@ footer p{
   font-size: smaller;
 }
 }
+
 
