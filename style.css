@@ -118,7 +118,11 @@ body{
   padding: 5px;
 }
 .tags i{
+  color: darkgray;
   font-size: x-large;
+}
+.tags i:hover{
+  color: rgb(41, 41, 41);
 }
 .tags .btn{
   background-color: transparent;
