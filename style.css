@@ -102,6 +102,7 @@ body{
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   background: url(images/srikar.jpeg);
   background-size: cover;
+  background-position: center;
 }
 .homemsg h3{
   font-weight: 450;
@@ -622,6 +623,7 @@ footer p{
   font-size: smaller;
 }
 }
+
 
 
 
